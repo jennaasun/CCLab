@@ -35,17 +35,16 @@ function draw() {
     y--;
   }
 
-  // Draw different shapes based on conditions
   if (stand) {
-    drawStand(); // Draw the ellipse initially
+    drawStand(); //the warawara stands
   } else if (inflate) {
-    drawInflate();
+    drawInflate();//the warawara inflates
   } else {
-    creature(x, y); // Draw the creature when ellipse is not visible
+    creature(x, y); //the warawara flies
   }
   
   if (stand && inflate == true) {
-      image(img, 250, 250, imgWidth, imgHeight); // Draw the loaded image at position (0, 0)
+      image(img, 250, 250, imgWidth, imgHeight);//fishguts
   }
  // if (mouseIsPressed) {
 //  image(myCursor, mouseX,mouseY);
@@ -59,10 +58,10 @@ function draw() {
 function mousePressed() {
   dis = dist(mouseX, mouseY, x, y);
 
-  // If the mouse is pressed within the distance to the creature and the ellipse is visible
+  //if mouse is pressed in area of creature
   if (dis < 400 && stand) {
     ifGo = true; // Start floating the creature
-    stand = false; // Hide the ellipse
+    stand = false; 
   } else if (dis < 400 && inflate) {
     inflate = false;
   }
@@ -150,6 +149,7 @@ function creature(xpos, ypos) {
   fill(0);
   circle(-30, 80, 10);
   circle(30, 80, 10);
+  //smile
   strokeWeight(2);
   stroke(0, 0, 0);
   noFill();
@@ -158,7 +158,6 @@ function creature(xpos, ypos) {
 }
 
 function drawStand() {
-  // This function draws the initial ellipse
   //body
   push();
   translate(width / 2, height / 2);
@@ -172,32 +171,31 @@ function drawStand() {
   ellipse(370, 450, 40, 90);
   ellipse(470, 450, 40, 90);
   //right arm, left arm on screen
-  // Scaled down Right Arm (left on screen)
   push();
   translate(width / 2.5, height / 2.5);
   noStroke();
   fill(255, 255, 255);
   beginShape();
-  curveVertex(50, 120); // Position relative to the body
-  curveVertex(50, 120); // Position relative to the body
-  curveVertex(-30, 220); // Position relative to the body
-  curveVertex(20, 220); // Position relative to the body
-  curveVertex(150, 120); // Position relative to the body
-  curveVertex(150, 120); // Position relative to the body
+  curveVertex(50, 120);
+  curveVertex(50, 120);
+  curveVertex(-30, 220); 
+  curveVertex(20, 220); 
+  curveVertex(150, 120); 
+  curveVertex(150, 120);
   endShape();
   pop();
   //left arm, right on screen
   push();
-  translate(width / 2.5, height / 2.5); // Move to the right 40 pixels
+  translate(width / 2.5, height / 2.5); 
   noStroke();
   fill(255, 255, 255);
   beginShape();
-  curveVertex(100, 120); // Position relative to the body
-  curveVertex(100, 120); // Position relative to the body
-  curveVertex(190, 220); // Position relative to the body
-  curveVertex(230, 220); // Position relative to the body
-  curveVertex(180, 120); // Position relative to the body
-  curveVertex(180, 120); // Position relative to the body
+  curveVertex(100, 120);
+  curveVertex(100, 120);
+  curveVertex(190, 220); 
+  curveVertex(230, 220);
+  curveVertex(180, 120); 
+  curveVertex(180, 120); 
   endShape();
   pop();
   // Eyes
@@ -240,32 +238,31 @@ function drawInflate() {
   ellipse(370, 450, 40, 90);
   ellipse(470, 450, 40, 90);
   //right arm, left arm on screen
-  // Scaled down Right Arm (left on screen)
   push();
   translate(width / 2.5, height / 2.5);
   noStroke();
   fill(255, 255, 255);
   beginShape();
-  curveVertex(50, 120); // Position relative to the body
-  curveVertex(50, 120); // Position relative to the body
-  curveVertex(-30, 220); // Position relative to the body
-  curveVertex(20, 220); // Position relative to the body
-  curveVertex(150, 120); // Position relative to the body
-  curveVertex(150, 120); // Position relative to the body
+  curveVertex(50, 120); 
+  curveVertex(50, 120);
+  curveVertex(-30, 220);
+  curveVertex(20,220);
+  curveVertex(150, 120); 
+  curveVertex(150, 120); 
   endShape();
   pop();
   //left arm, right on screen
   push();
-  translate(width / 2.5, height / 2.5); // Move to the right 40 pixels
+  translate(width / 2.5, height / 2.5);
   noStroke();
   fill(255, 255, 255);
   beginShape();
-  curveVertex(100, 120); // Position relative to the body
-  curveVertex(100, 120); // Position relative to the body
-  curveVertex(190, 220); // Position relative to the body
-  curveVertex(230, 220); // Position relative to the body
-  curveVertex(180, 120); // Position relative to the body
-  curveVertex(180, 120); // Position relative to the body
+  curveVertex(100, 120); 
+  curveVertex(100, 120); 
+  curveVertex(190, 220); 
+  curveVertex(230, 220); 
+  curveVertex(180, 120); 
+  curveVertex(180, 120); 
   endShape();
   pop();
   // Eyes
