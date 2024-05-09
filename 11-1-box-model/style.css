@@ -1,0 +1,50 @@
+/*remove default margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0
+}
+
+body {
+    background-color: beige;
+}
+
+.title-box {
+    text-align: center;
+    margin: 20px;
+
+}
+
+.box {
+    background-color: burlywood;
+
+    width: 180px;
+    height: 150px;
+
+    margin: 20px;
+    padding: 10px;
+}
+
+#invisible-box {
+    background-color: tomato;
+    visibility: hidden;
+    /*display: none;*/
+}
+#special-box-1 {
+    background-color: tomato;
+
+    position: relative;
+    left: 100px;
+}
+
+#special-box-2 {
+    position: absolute;
+    left : 200px;
+    top: 100px;
+}

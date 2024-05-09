@@ -1,0 +1,771 @@
+/* DONT TOUCH BETWEEN */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+canvas {
+  display: block;
+  z-index: 999;
+}
+
+/* DONT TOUCH BETWEEN */
+
+
+/* styles for index.html */
+/* main landing page */
+.box {
+  background-color: bisque;
+  border: 3px solid rgb(206, 45, 45);
+  width: 500px;
+  height: 200px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+#title-box {
+  font-weight: bold;
+  font-size: 30px;
+  width: 700px;
+  color: #cc4848;
+
+  z-index: 5;
+}
+
+.start-box {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -200%);
+  background-color: #cc4848;
+
+  width: 130px;
+  height: 60px;
+
+  z-index: 5;
+
+}
+
+.START {
+  position: absolute;
+  left: 48%;
+  top: 4%;
+  transform: translate(-5%, 60%);
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  width: 700px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+
+  z-index: 5;
+}
+
+/* styles for page 1 */
+/* play button page */
+#page1 {
+  background-color: black;
+}
+
+.CONTINUE img {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  transition: transform 0.3s ease;
+  width: 250px;
+
+}
+
+.CONTINUE:hover img {
+  transform: translate(0px, -8px);
+}
+
+/* styles for page 2*/
+/* transitional page 1 */
+#beijing-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the video covers the entire area */
+  z-index: -1;
+  /* Ensures the video is behind other content */
+}
+
+.NEXT img {
+  position: fixed;
+  left: 97%;
+  top: 20%;
+  transition: transform 0.3s ease;
+  width: 40px;
+}
+
+.NEXT:hover img {
+  transform: translate(-5px, 0px);
+}
+
+.PREVIOUS img {
+  position: fixed;
+  left: -12px;
+  top: 20%;
+  transition: transform 0.3s ease;
+  width: 50px
+}
+
+.PREVIOUS:hover img {
+  transform: translate(5px, 0px);
+}
+
+.textbox {
+  background-color: rgba(238, 225, 148, 0.997);
+  position: fixed;
+  /* padding: 5px; */
+  /* margin: 20px; */
+  height: 30px;
+  width: 260px;
+  /* Set width of the box */
+  font: Georgian;
+  font-size: 10px;
+  top: 5%;
+  left: 5%;
+}
+
+.textbox-2 h3 {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  background-color: rgba(238, 225, 148, 0.997);
+  text-align: left;
+}
+
+.textbox-3 h2 {
+  position: fixed;
+  top: 86%;
+  left: 56%;
+  background-color: rgba(238, 225, 148, 0.997);
+  text-align: left;
+}
+
+
+/* styles for page 3*/
+/* transitional page 2 */
+#page3 {
+  background-color: black;
+}
+
+.black-box {
+  background-color: black;
+  width: 500px;
+  height: 300px;
+  padding: 25px;
+  margin: 20px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+
+
+.gradient-img {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.NEXT img {
+  position: fixed;
+  left: 97%;
+  top: 20%;
+  transition: transform 0.3s ease;
+  width: 40px;
+}
+
+.NEXT:hover img {
+  transform: translate(-5px, 0px);
+}
+
+
+/* styles for page 4*/
+#plane-video {
+  position: fixed;
+  left: -400px;
+  width: 100%;
+  height: 100%;
+}
+
+.planeseats-img {
+  position: fixed;
+  right: -800px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+/* page5 */
+.beijing {
+  font-size: 50px;
+}
+
+
+.textbox {
+  background-color: rgba(238, 225, 148, 0.997);
+  position: fixed;
+  /* padding: 5px; */
+  /* margin: 20px; */
+  height: 50px;
+  width: 260px;
+  /* Set width of the box */
+  font: Georgian;
+  font-size: 10px;
+  top: 5%;
+  left: 5%;
+}
+
+.textbox-2 h3 {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  background-color: rgba(238, 225, 148, 0.997);
+  text-align: left;
+}
+
+.textbox-3 h2 {
+  position: fixed;
+  top: 86%;
+  left: 56%;
+  background-color: rgba(238, 225, 148, 0.997);
+  text-align: left;
+}
+
+/* styles for page 5*/
+.buildings-img {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+}
+
+/* styles for page 6*/
+#page6 {
+  background-color: black;
+}
+
+.lake-img {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+}
+
+
+.mushroom-img {
+  position: absolute;
+  left: 77%;
+  top: 105%;
+  width: 200px;
+  height: 200px;
+}
+
+.open-window-img {
+  position: absolute;
+  left: 70%;
+  top: 90%;
+  width: 400px;
+  height: 400px;
+
+  z-index: -1;
+}
+
+.last-night-img {
+  position: absolute;
+  left: 0%;
+  top: 120%;
+  width: 300px;
+  height: 250px;
+}
+
+/* styles for page 7*/
+#page7 {
+  background-color: red;
+}
+
+.red-gif {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+}
+
+.left-paper-img {
+  position: fixed;
+  top: -1%;
+  left: 1.2%;
+  width: 500px;
+  height: 300px;
+}
+
+.connect-one-img {
+  position: fixed;
+  top: 3%;
+  left: 7%;
+  width: 300px;
+  height: 200px;
+}
+
+.paper-img {
+  position: fixed;
+  top: 35%;
+  left: 78%;
+  width: 350px;
+  height: 500px;
+
+  z-index: -1;
+}
+
+.connect-three-img {
+  position: fixed;
+  top: 45%;
+  left: 70%;
+  width: 500px;
+  height: 400px;
+}
+
+/* styles for page 8
+.watching-video-2-img {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  width: 300px;
+  height: 200px;
+} */
+
+/* styles for page 9*/
+.green-img {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+}
+
+.red-cd-row {
+  display: flex;
+  margin-left: -40px;
+  /* margin-right: 10px; */
+  margin-top: 15px;
+}
+
+.red-cd-row-img {
+  width: 130px;
+  height: 100px;
+  margin-right: 5px;
+
+}
+
+.cd-path-img {
+  position: fixed;
+  top: 60%;
+  left: 80%;
+  width: 100px;
+  height: 250px;
+}
+
+.red-cd-alone-img {
+  position: fixed;
+  margin-left: -30px;
+  margin-right: 10px;
+  width: 130px;
+  height: 100px;
+  top: 140px;
+}
+
+.red-cd-button-img {
+  position: fixed;
+  margin-left: 105px;
+  margin-right: 10px;
+  width: 130px;
+  height: 100px;
+  top: 140px;
+}
+
+.popup-cd {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 9999;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+}
+
+.red-cd-button-img {
+  position: fixed;
+  margin-left: 105px;
+  margin-right: 10px;
+  width: 130px;
+  height: 100px;
+  top: 140px;
+  cursor: pointer;
+}
+
+
+/* page 10 */
+#canvas-container {
+  position: relative;
+}
+
+.orange-img {
+  position: fixed;
+  top: 230px;
+  left: 90px;
+  width: 310px;
+  height: 180px;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.orange-img:hover {
+  transform: scale(1.3);
+}
+
+.orange-img2 {
+  position: fixed;
+  top: 230px;
+  left: 600px;
+  width: 310px;
+  height: 180px;
+
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.orange-img2:hover {
+  transform: scale(1.3);
+}
+
+.orange-img3 {
+  position: fixed;
+  top: 230px;
+  left: 1070px;
+  width: 310px;
+  height: 180px;
+
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.orange-img3:hover {
+  transform: scale(1.3);
+}
+
+
+
+/* page 11 */
+#page11 {
+  /* background-color: #b03c44; */
+  background-color: #ffe8e6;
+}
+
+.journal-open-img {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+}
+
+.journal-box-1 {
+  position: fixed;
+  top: 9%;
+  left: 52%;
+  width: 620px;
+  height: 580px;
+  background-color: #ffb4b4;
+}
+
+.journal-title-box {
+  position: absolute;
+  top: 13%;
+  left: 60%;
+  width: 700px;
+  height: 100px;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  width: 400px;
+  color: #a93c45;
+  background-color: none;
+
+  z-index: 5;
+}
+
+.laolao {
+  position: absolute;
+  left: 58%;
+  top: 30%;
+  /* transform: translate(-5%, 600%); */
+
+  font-weight: bold;
+  color: #cc4848;
+  font-size: 25px;
+  width: 700px;
+
+  z-index: 5;
+}
+
+.laoye {
+  position: absolute;
+  left: 83%;
+  top: 30%;
+  /* transform: translate(-5%, 600%); */
+
+  font-weight: bold;
+  color: #cc4848;
+  font-size: 25px;
+  width: 700px;
+
+  z-index: 5;
+}
+
+.dayi-dayifu {
+  position: absolute;
+  left: 58%;
+  top: 50%;
+  /* transform: translate(-5%, 600%); */
+
+  font-weight: bold;
+  color: #cc4848;
+  font-size: 25px;
+  width: 700px;
+
+  z-index: 5;
+}
+
+.jiujiu-jiuma {
+  position: absolute;
+  left: 83%;
+  top: 50%;
+  /* transform: translate(-5%, 600%); */
+
+  font-weight: bold;
+  color: #cc4848;
+  font-size: 25px;
+  width: 700px;
+
+  z-index: 5;
+}
+
+.sanyi {
+  position: absolute;
+  left: 72.5%;
+  top: 70%;
+  /* transform: translate(-5%, 600%); */
+
+  font-weight: bold;
+  color: #cc4848;
+  font-size: 25px;
+  width: 700px;
+
+  z-index: 5;
+}
+
+/* styles for narrative hub page */
+#example-box {
+  left: calc(50% - 100px);
+  top: calc(50% - 20px);
+  width: 100px;
+  height: 200px;
+}
+
+#box-photo-1 {
+  background-color: white;
+  font-weight: bold;
+  font-size: 30px;
+
+  left: calc(50% - 100px);
+  top: calc(50% - 20px);
+  width: 100px;
+  height: 200px;
+}
+
+#box-photo-2 {
+  background-color: aqua;
+  font-weight: bold;
+  font-size: 30px;
+
+  left: calc(50% + 200px);
+  top: calc(50% - 100px);
+  width: 100px;
+  height: 200px;
+}
+
+/* styles for page 17 */
+.nainai {
+  position: absolute;
+  left: 58%;
+  top: 30%;
+  /* transform: translate(-5%, 600%); */
+
+  font-weight: bold;
+  color: #cc4848;
+  font-size: 25px;
+  width: 700px;
+
+  z-index: 5;
+}
+
+.yeye {
+  position: absolute;
+  left: 83%;
+  top: 30%;
+  /* transform: translate(-5%, 600%); */
+
+  font-weight: bold;
+  color: #cc4848;
+  font-size: 25px;
+  width: 700px;
+
+  z-index: 5;
+}
+
+.ergu-ergufu {
+  position: absolute;
+  left: 58%;
+  top: 50%;
+  /* transform: translate(-5%, 600%); */
+
+  font-weight: bold;
+  color: #cc4848;
+  font-size: 25px;
+  width: 700px;
+
+  z-index: 5;
+}
+
+.laogu-laogufu {
+  position: absolute;
+  left: 83%;
+  top: 50%;
+  /* transform: translate(-5%, 600%); */
+
+  font-weight: bold;
+  color: #cc4848;
+  font-size: 25px;
+  width: 700px;
+
+  z-index: 5;
+}
+
+
+/* styles for page 14*/
+#page14 {
+  background-color: black;
+}
+
+#camera-img {
+  position: relative;
+  top: 0%;
+  left: 15%;
+  width: 1100px;
+  height: 700px;
+
+  z-index: 1;
+}
+
+.photo {
+  position: absolute;
+  top: 13%;
+  /* Adjust position as needed */
+  left: 20%;
+  /* Adjust position as needed */
+  width: 50%;
+  /* Adjust width as needed */
+  height: 80%;
+  /* Adjust height as needed */
+  display: none;
+  /* Initially hide photos */
+}
+
+
+.back-box {
+  position: absolute;
+  left: 10%;
+  top: 95%;
+  transform: translate(-50%, -200%);
+  background-color: #cc4848;
+
+  width: 130px;
+  height: 60px;
+
+  z-index: 5;
+
+}
+
+.back {
+  position: absolute;
+  left: 48%;
+  top: 4%;
+  transform: translate(-5%, 60%);
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  width: 700px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+
+  z-index: 5;
+}
+
+.take-picture {
+  font-weight: 2px;
+  color: white;
+
+  z-index: 1;
+}
