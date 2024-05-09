@@ -769,3 +769,68 @@ canvas {
 
   z-index: 1;
 }
+
+h1 {
+  text-align: center;
+}
+
+#mainFlexContainer {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+
+
+  flex-direction: row;
+}
+
+@media (max-width: 400px) {
+
+  /* CSS rules */
+  #mainFlexContainer {
+    flex-direction: column;
+    max-width: 200px;
+  }
+
+  .intro {
+    order: 2;
+  }
+
+  #canvasContainer {
+    order: 1;
+  }
+
+  .credits {
+    order: 3;
+  }
+
+
+}
+
+.black-box-2 {
+  left: 30%;
+  top: 30%;
+  background-color: white;
+  width: 500px;
+  height: 400px;
+  padding: 25px;
+  margin: 20px;
+
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+.laoye-young {
+  position: fixed;
+  left: 10%;
+  top: 0%;
+  width: 400px;
+  height: 550px;
+}
