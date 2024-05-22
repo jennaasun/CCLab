@@ -11,13 +11,12 @@ function displayCurrentPhoto() {
 }
 
 document.getElementById("camera-img").addEventListener("click", function () {
-    // Display the next photo
+
     currentPhotoIndex++;
     if (currentPhotoIndex >= photos.length) {
-        currentPhotoIndex = 0; // Loop back to the first photo
+        currentPhotoIndex = 0;
     }
     displayCurrentPhoto();
 });
 
-// Initialize by displaying the first photo
 displayCurrentPhoto();

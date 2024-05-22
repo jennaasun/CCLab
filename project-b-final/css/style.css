@@ -1,4 +1,4 @@
-/* DONT TOUCH BETWEEN */
+/* DONT TOUCH  */
 html,
 body {
   margin: 0;
@@ -12,7 +12,7 @@ canvas {
   z-index: 999;
 }
 
-/* DONT TOUCH BETWEEN */
+/* DONT TOUCH  */
 
 
 /* styles for index.html */
@@ -134,7 +134,7 @@ canvas {
   /* margin: 20px; */
   height: 30px;
   width: 260px;
-  /* Set width of the box */
+
   font: Georgian;
   font-size: 10px;
   top: 5%;
@@ -501,7 +501,11 @@ canvas {
   transform: scale(1.3);
 }
 
-
+#back-box .back {
+  font-size: 15px;
+  top: 15%;
+  left: 40%;
+}
 
 /* page 11 */
 #page11 {
@@ -628,7 +632,7 @@ canvas {
   font-weight: bold;
   font-size: 30px;
 
-  left: calc(50% - 100px);
+  left: calc(50% - 100px);  
   top: calc(50% - 20px);
   width: 100px;
   height: 200px;
